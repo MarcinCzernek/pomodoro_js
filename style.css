@@ -20,8 +20,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(555, 555, 555); /* Fallback color */
-    background: rgba(555, 555, 555, 0.5);
+    flex-shrink: initial;
+
+    background: rgb(200, 200, 200); /* Fallback color */
+    background: rgba(200, 200, 200, 0.5);
     padding: 50px;
     position: relative;
     margin-left: 500px;
@@ -29,11 +31,20 @@ body{
 
 }
 
+.container h1{
+    text-shadow: 2px 2px darkred;
+}
+
 #switch{
-    padding: 30px;
-    font-size: 20px;
+    padding: 12px 42px;
+    font-size: 1.45em;
+    border-radius: 12px;
+    background: white;
+    color: #171717;
+    transform: translateY(-6px);
 
 }
+
 
 #counter{
     padding: 50px;
@@ -46,12 +57,28 @@ body{
 
 }
 
+
 .optionContainer{
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
     font-size: 20px;
+
+
 }
+
+.optionContainer input{
+    font-size: 1em;
+    background: none;
+    border: none;
+    width: 100px;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px #171717;
+
+}
+
 
 .optionContainer button{
     font-size: 20px;

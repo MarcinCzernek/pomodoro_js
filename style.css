@@ -1,0 +1,58 @@
+body{
+    background-color: steelblue;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.6; */
+    color: white;
+    font-style: initial;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(555, 555, 555); /* Fallback color */
+    background: rgba(555, 555, 555, 0.5);
+    padding: 50px;
+    position: relative;
+    margin-left: 500px;
+    margin-right: 500px;
+
+}
+
+#switch{
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+#counter{
+    padding: 50px;
+    background-color: revert;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: "Cascadia Code";
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5)
+
+}
+
+.optionContainer{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.optionContainer button{
+    font-size: 20px;
+}

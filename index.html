@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:text-shadow="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Apka Pomodoro</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="materials/pomodoro.png">
 </head>
 <body>
+
 <div class="container">
+
     <h1 style="color: orangered; font-family: Italic; font-size: 40px";>Pomodoro</h1>
-
-<div class="optionContainer">
-    <label for="length">Ustal czas:</label>
-    <input type="number" name="length" id="length" placeholder="25" min="1" max="100" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
-    <button id="oklength">Ok</button>
-    <img src="materials/7329721.png" alt="icon" width="35" height="35">
-    <span id="lenInfo">Czas trwania pomodoro:</span>
-</div>
-
-    <span id="counter">Pozostało sekund:</span>
+        <label for="length">Ustal czas:</label>
+        <input type="number" name="length" id="length" placeholder="25" min="1" max="100" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+        <button id="oklength">Ok</button>
+        <br>
+        <img src="materials/pomodoro.png" alt="icon" width="35" height="35">
+        <p id="lenInfo">Czas trwania pomodoro:<p><br>
+    <span id="counter">Pozostało sekund:</span><br><br><br>
     <button id="switch">START</button>
+
 </div>
 
 <script src="script.js"></script>

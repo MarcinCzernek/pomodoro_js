@@ -23,7 +23,7 @@ h1{
 }
 
 
-#counter{
+#counter, #mincounter, #distributor{
     width: 30px;
     height: 30px;
     background-color: revert;

@@ -13,13 +13,15 @@
 
     <h1 style="color: orangered; font-family: Italic; font-size: 40px";>Pomodoro</h1>
     <label for="length">Ustal czas:</label>
-    <input type="number" name="length" id="length" placeholder="25" min="1" max="100" onkeypress="return (event.charCode !=8 && event.charCode ==0 && event.charCode == 1 || (event.charCode >= 48 && event.charCode <= 57))">
+    <input type="number" name="length" id="length" placeholder="25" min="5" max="100" onkeypress="return (event.charCode !=8 && event.charCode ==0  || (event.charCode >= 53 && event.charCode <= 57))">
     <button id="oklength">Ok</button>
     <br>
     <p id="lenInfo">Czas trwania pomodoro:<p><br>
+    <div id="counterTable">
     <span id="mincounter">00</span>
-    <span>:</span>
+    <span id="distributor">:</span>
     <span id="counter">00</span><br><br><br>
+    </div>
     <button id="switch">START</button>
 
 </div>

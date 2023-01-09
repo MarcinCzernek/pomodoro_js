@@ -33,33 +33,20 @@ button.onclick = function() {
                     minutes--;
                     if(minutes > 0){
                         seconds = 60;
+                        console.log('minutes > 0');
                     }
+                    console.log('seconds == 0 && minutes > 0');
                     minCounter.innerHTML = `${minutes}`;
-                }if(minutes == 0 ){
-                    minutes = length;
-                    seconds = 60;
-                    clearInterval(interval);
+                }if(minutes == 0){
+                    console.log(seconds)
+                    seconds = 60
                     document.body.style.background = "steelblue";
                     button.innerHTML = "START";
                     beat.play();
-                    minCounter.innerHTML = `${minutes}`;
-                    counter.innerHTML = `${seconds}`;
-                }
-            }else if (minutes == 0 && seconds > 0){
-                seconds--;
-                document.body.style.background = "seagreen";
-                counter.innerHTML = `${seconds}`;
-                minCounter.innerHTML = `${minutes}`;
-                button.innerHTML = 'STOP';
-                if(seconds == 0){
-                    minutes = length;
-                    seconds = 60;
+                    minCounter.innerHTML = `00`;
+                    counter.innerHTML = `00`;
                     clearInterval(interval);
-                    document.body.style.background = "steelblue";
-                    button.innerHTML = "START";
-                    beat.play();
-                    minCounter.innerHTML = `${minutes}`;
-                    counter.innerHTML = `${seconds}`;
+                    console.log('minutes == 0');
                 }
             }
         }, 1000)

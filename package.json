@@ -1,0 +1,19 @@
+{
+  "name": "pomodoro_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinCzernek/pomodoro_js.git"
+  },
+  "author": "Marcin Czernek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinCzernek/pomodoro_js/issues"
+  },
+  "homepage": "https://github.com/MarcinCzernek/pomodoro_js#readme"
+}

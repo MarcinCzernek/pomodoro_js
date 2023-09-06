@@ -1,7 +1,7 @@
 const minCounter = document.getElementById('mincounter');
 const counter = document.getElementById('counter');
 const startStopPomodoro = document.getElementById('switch');
-const okButton = document.getElementById('okButton');
+const okButton =document.getElementById('okButton');
 const lengthInfoText = document.getElementById('lengthInfoText');
 
 let minutes = 0;
@@ -24,7 +24,7 @@ function updateLength (){
 function activatePomodoro() {
   if (!pomodoroGoing) {
     minutes = pomodoroLength - 1;
-    seconds = 60; // Zresetuj sekundy do 60
+    seconds = 60; 
     interval = setInterval(function () {
       if (minutes >= 0) {
         seconds--;
@@ -35,7 +35,7 @@ function activatePomodoro() {
 
         if (seconds === 0 && minutes > 0) {
           minutes--;
-          seconds = 60; // Zresetuj sekundy do 60 po zmianie minut
+          seconds = 60; 
           minCounter.innerHTML = minutes < 10 ? `0${minutes}` : minutes.toString();
         }
 
@@ -59,6 +59,4 @@ function activatePomodoro() {
 
 startStopPomodoro.onclick = activatePomodoro;
   
-
-
 

@@ -16,10 +16,19 @@ lengthInfoText.innerHTML = `Długość trwania pomodoro: ${pomodoroLength} minut
 
 okButton.onclick = updateLength;
 
-function updateLength (){
-  pomodoroLength = document.getElementById('length').value;
+  function updateLength() {
+  pomodoroLength = parseInt(document.getElementById('length').value);
   lengthInfoText.innerHTML = `Długość trwania pomodoro: ${pomodoroLength} minut`;
+
+  if (!pomodoroGoing) {
+    minutes = pomodoroLength - 1;
+    seconds = 60;
+    minCounter.innerHTML = minutes < 10 ? `0${minutes}` : minutes.toString();
+    counter.innerHTML = `00`;
+  }
 }
+  
+
 
 function activatePomodoro() {
   if (!pomodoroGoing) {
